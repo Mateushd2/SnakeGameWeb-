@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake Game 🐍</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>🐍 Snake Game</h1>
+
+    <!-- MENU INICIAL -->
+    <div id="menu">
+      <button id="playBtn">▶ Play</button>
+      <p>Press Enter</p>
+    </div>
+
+    <!-- HUD (oculto no início) -->
+    <div class="hud hidden">
+      <div>Pontos: <span id="score">0</span></div>
+      <div class="controls">
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="restart">Reiniciar</button>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="1000" height="600" aria-label="Tabuleiro do jogo" class="hidden"></canvas>
+
+    <!-- Controles móveis -->
+    <div class="mobile-controls hidden">
+      <button id="up">↑</button>
+      <div>
+        <button id="left">←</button>
+        <button id="down">↓</button>
+        <button id="right">→</button>
+      </div>
+    </div>
+
+    <p class="hint">Use as setas do teclado (← ↑ → ↓) ou os botões acima. Abra com Live Server no VS Code.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
